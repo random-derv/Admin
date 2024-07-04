@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Admin Dashboard</title>
+    <link rel="shortcut icon" href="images/sgp_logo.png" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/admin_dashboard.css">
+</head>
+
+<body class="img js-fullheight" style="background-image: url(images/sgp_bg.jpg);">
+    <section class="ftco-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="dashboard">
+                        <div id="user-info-container"
+                            style="display: flex;align-items: start;justify-content: flex-start;position: absolute;left: 20px;">
+                            <!-- User info will be here -->
+                        </div>
+                        <h2>Welcome to Admin Dashboard</h2>
+                        <h4>Add files with realtime updates </h4>
+                        <div class="file-upload">
+                            <input type="file" id="file-upload" accept="image/*, application/pdf"><br>
+                            <button id="upload-button">Upload File</button>
+                        </div>
+                        <div id="file-list" style="width: 50%;">
+                            <!-- File list will be displayed here dynamically -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="dashboard">
+                        <h4>Add HOD</h4>
+                        <div>
+                            <label for="hod-name">HOD Name:</label>
+                            <input type="text" id="hod-name" placeholder="Enter HOD's Name">
+                        </div>
+                        <div>
+                            <label for="department-select">Department:</label>
+                            <select id="department-select">
+                                <option value="CST">CST</option>
+                                <option value="EE">EE</option>
+                                <option value="CE">CE</option>
+                                <option value="ETC">ETC</option>
+                                <option value="EIE">EIE</option>
+                                <option value="AR">AR</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="phone-number">Phone Number:</label>
+                            <input type="text" id="phone-number" placeholder="Enter Phone Number">
+                        </div>
+                        <button id="add-hod-button">Add HOD</button>
+                        <div id="hod-details-container">
+                            <h4 style="margin-top: 20px;">All HODs</h4>
+                            <div id="hod-details" >
+                                <!-- HOD details will be displayed here dynamically -->
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <!-- jQuery, Popper.js, Bootstrap -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Your custom JavaScript -->
+    <script src="js/admin_dashboard.js"></script>
+</body>
+
+</html>

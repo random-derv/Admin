@@ -1,0 +1,63 @@
+.dashboard {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.file-upload {
+    margin-bottom: 20px;
+}
+
+#file-list {
+    margin-top: 20px;
+}
+
+.file-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+}
+
+.file-item button {
+    margin-left: 10px;
+}   
+.dashboard {
+    background: #f8f9fa;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.dashboard h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.dashboard div {
+    margin-bottom: 10px;
+}
+
+.dashboard label {
+    display: block;
+    margin-bottom: 5px;
+}
+.hod-item {
+    margin-bottom: 20px;
+}
+
+.delete-hod-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.delete-hod-button:hover {
+    background-color: #c82333;
+}
+    
